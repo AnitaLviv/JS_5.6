@@ -1,12 +1,23 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Home-work JS 2</title>
-	<script src="js/script.js"></script>
+
+   <meta charset="utf-8">
+   <script src="js/script.js"></script>
+   <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+   <title>Timer</title>
 </head>
-<body>
-	
-</body>
+   <body onLoad="loadTime();">
+              <div class = "input">
+                <input type="button" class="btn btn-primary" onclick="stopAndStart()" name="StartStopButton" id="StartStopButton" title="Start / Stop" value="Start">
+                <input type="button" class="btn btn-primary" onclick="splitTime()" name="SplitButton" id="SplitButton" title="Split" value="Split">
+                <input type="button" class="btn btn-primary" name="displayAll" id="displayAll" title="Stopwatch">
+                <input type="button" class="btn btn-primary" onclick="resetAll()" name="ResetButton" id="ResetButton" title="Reset" value="Reset">
+                <div id="split"></div>
+           </div>
+     </body>
 </html>
